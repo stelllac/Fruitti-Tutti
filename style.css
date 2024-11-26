@@ -1,0 +1,827 @@
+/* imports a font into the style sheet so that it can be used later on */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    /* creates extra space within a box */
+    padding: 0;
+    /* creates extra space around an element */
+    margin: 0;
+    /* list style none removes all the bullet points in the list */
+    list-style: none;
+    /* gets rid of any underline, overline, line-through or decoration added to a text  */
+    text-decoration: none;
+    /* defines the width or height of an element and if it shoud be extended to the border edges*/
+    box-sizing: border-box;
+    /* sets the font for the piece of text */
+    font-family: 'Open Sans';
+    background-color: rgb(232, 226, 213);
+
+}
+
+nav {
+    /* sets the background color for the document */
+    background-color:  rgb(232, 226, 213);
+    padding: 5px 160px;
+    /* makes all the elements display in a row */
+    display: flex;
+    /* the items are aligned at the center of the cross axis  */
+    align-items: center;
+    /* sets the height for the specific element */
+    height: 110px;
+    /* codes for the stacking order, negative=background, positive=over */
+    z-index: 1;
+}
+
+main {
+    /* sets a minimum height for the page, calc does simple calculations*/
+    min-height: calc(100vh - 120px - 240px)
+}
+
+body nav {
+    /* makes the element stick to the page when the user scrolls */
+    position: sticky;
+    /* position the element to the very top */
+    top: 0;
+}
+
+.logo {
+
+    transform: translateY(19px);
+    width: 300px;
+    height: auto;
+ 
+
+}
+
+.menu {
+    display:flex;
+    align-items: left;
+    margin-right: 510px;
+    list-style: none;
+}
+
+
+.fa-regular  {
+    transform: translateY(7px);
+    margin-left: -100px;
+
+}
+
+.fa-solid { /* orders basket*/
+    transform: translateY(7px);
+   
+    margin-left: 9px;
+    margin-left: -40px;
+   
+}
+
+.menu li {
+    padding: 20px 20px;
+    /* determines the size of the text */
+    font-size: 16px;
+}
+
+.menu li a {
+    text-decoration: none;
+    /* sets the color of the font */
+    color: rgb(11, 33, 3);
+}
+
+img {
+    /* determines how wide the element will appear */
+    width: 250px;
+    /* sets the margin area on the right side of the element */
+    margin-right: 10px;
+}
+
+.weekly {
+    text-align: center;
+    color: rgb(11, 33, 3);
+   
+  
+}
+
+.delivery {
+    width: 850px;
+    height: auto;
+    margin-left: 310px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+
+}
+
+
+
+.homeenter .fruittproducts{
+    background: white;
+    border-radius: 12px;
+    box-shadow:0 10px 10px rgba(0, 0, 0, 0.01);
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+
+}
+
+
+.homeenter .fruittproducts:hover {
+    border-color: #1f513a;
+}
+
+.fruittproducts img {
+    border-radius: 12px;
+}
+/*start of about page*/
+
+.fruittproducts2 img{
+    border-radius: 12px;
+}
+
+.shoppnow { /*buttons at the home page */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    height: 20px;    
+    margin-bottom: 20px;
+    text-align:center;
+    width: 80px;
+    margin-left: 30px;
+    text-decoration: none;  /* Remove underline */
+    color: white;           /* Button text color */
+    background-color: #1f513a; /* Button background color */
+    padding: 15px 30px;     /* Add padding for button size */
+    font-size: 15px;        /* Font size */
+    font-weight: bold;      /* Bold text */
+    border-radius: 25px;    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s;      /* Full viewport height */
+   
+     
+  }
+  
+
+
+.abouth1 {
+    font-size: 40px;
+    margin-left: 110px;
+    padding-top: 40px;
+    /* codes for the weight or how bold your text will appear */
+    font-weight: bold;
+
+}
+.cloudson {
+
+    /* places elements next to each other or inline to each other */
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 20px;
+    /* places extra space on the bottom of an element */
+    padding-bottom: 130px;
+}
+.cloudson img {
+    width: 550px;
+
+}
+
+.aboutinformation {
+    /* codes for the element to reside on the right side of the page */
+    float: right;
+    width: 600px;
+    /* codes or margin-area for the right area of an element */
+    margin-right: 135px;
+    font-size: 25px;
+    padding-top: 0;
+    text-align: center;
+}
+
+
+
+
+/* footer */
+
+
+
+footer .container{
+    background-color:  rgb(232, 226, 213);
+    padding: 30px;
+    height: 240px;
+}
+
+footer .footer {
+    display: flex;
+    /* elements are spread evenly along the width of the container  */
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.footerlinks p {
+    font-size: 12px;
+    color: black;
+}
+footer {
+
+    width: 100%;
+}
+
+.footerlinks {
+    padding-left: 110px;
+}
+
+
+.footerlogo img {
+    width: 220px;
+    height: auto;
+    transform: translateY(-65px);
+    margin-left: -30px;
+}
+
+.footerlogo {
+    padding-right: 320px;
+}
+
+.footerlinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerlinks ul li a{
+    text-decoration: none;
+    color: rgb (11, 33, 3);
+    /* sets the transparency level of the text */
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+.footerlinks ul li a:hover {
+    color: rgb(11, 33, 3);
+    opacity: 1;
+
+}
+
+.footerlinks h3 {
+    color: rgb (11, 33, 3);
+    font-size: 15px;
+}
+
+.footerlinks input {
+    height: 35px;
+
+
+}
+
+.footer .copyright {
+    font-size: 10px;
+    color: rgb (11, 33, 3);
+    padding-left: 10px;
+}
+
+.socialmediaelements i {
+    color: rgb (11, 33, 3);
+    opacity: 0.7;
+}
+
+/* contact page */
+
+.contactus {
+    padding-left: 90px;
+}
+
+
+
+.contactpage p {
+    padding-left: 90px;
+}
+
+main .contactus {
+    font-size: 25px;
+    padding-top: 40px;
+
+}
+
+.onerow {
+    padding-left: 90px;
+    display: inline-block;
+
+}
+
+
+.onerow .contactforminput {
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.onerow .contactforminput input {
+    width: 100%;
+    /* remove the border around an element */
+    border: none;
+    /* sets a border only at the bottom */
+    border-bottom: 1px solid;
+    outline: none;
+    padding-top: 10px;
+
+}
+.formparts {
+    /* makes each element appear on a new line  */
+    display: block;
+    padding-bottom: 10px;
+}
+
+.message {
+    width: 660px;
+}
+
+.submitbutton {
+    padding-left: 90px;
+}
+.submitbutton input{
+    height: 30px;
+    width: 70px;
+    border: none;
+    background:rgb(232, 226, 213);
+    color: rgb (11, 33, 3);
+    /* makes the corner of images rounder */
+    border-radius: 20px;
+
+}
+
+form {
+    padding-bottom: 20px;
+}
+
+.contactcategory {
+    display: inline-block;
+    padding-left: 90px;
+    padding-bottom: 50px;
+}
+
+/* pricing */
+
+.chicken {
+    list-style: none;
+    margin: 0;
+
+}
+
+.chicken li {
+    float: right;
+    /* the image is positioned to its normal position  */
+    position: relative;
+
+}
+.chicken li a {
+    text-decoration: none;
+    color: rgb (11, 33, 3);
+    padding: 15px 20px;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+.chicken li:hover a {
+    background: rgb(232, 226, 213);
+
+}
+.chicken ul {
+    /* the image is fixed and in an exact locatoin  */
+    position: absolute;
+    padding: 0;
+    display: none;
+
+}
+
+.chicken li:hover .chicken {
+    display: block;
+}
+
+
+
+
+
+.pricings p, .pricings h1{
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+.pricings h1 {
+    padding-top: 20px;
+}
+.guide {
+    margin-left: 100px;
+    font-size: 15px;
+}
+
+.guide span {
+    font-size: 11px;
+}
+
+
+.wholething {
+    display: flex;
+    /* aligns all the elements in the center along the horizontal axis  */
+    justify-content: center;
+
+}
+.wholething .onething {
+    width: 200px;
+    padding: 30px;
+    margin: 30px 15px;
+    background-color: rgb(232, 226, 213);
+
+
+}
+
+.wholething .onething ul {
+    list-style: none;
+    padding-left: 10px;
+    line-height: 2;
+}
+.onething p{
+    padding-bottom: 0;
+
+}
+.disclaimer {
+    font-size: 12px;
+    margin-left: 100px;
+    padding-bottom: 30px;
+}
+
+/* team */
+
+.containerss {
+    text-align: center;
+}
+
+.teams {
+    padding-top: 40px;
+}
+
+.teams h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.people img {
+    border-radius: 50%;
+}
+.people {
+    margin: 10px;
+    padding: 20px;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.people:hover {
+    background:rgb(232, 226, 213);
+
+}
+
+.peoplename {
+    padding: 10px;
+    font-weight: bold;
+    font-size:17px;
+    /* transforms all the text to uppercase */
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.jobdesc {
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.jobdescription {
+    margin: 20px 0 20px 0;
+    opacity: 0.8;
+}
+
+.sociallinks a{
+    padding-right: 5px;
+    color: rgb(232, 226, 213)
+}
+
+/* home page*/
+
+.backgroundimage {
+    /* embeds a background image into the website */
+    background-image: url(Untitled-Artwork\ 2\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.clouds h1{
+    font-size: 80px;
+    color: rgb(26 ,31,46);
+    top: 40%;
+    position: absolute;
+    z-index:0;
+    text-align: center;
+    left: 32%;
+    font-style: bold;
+}
+
+.text-area {
+    padding:70px;
+    box-sizing: border-box;
+    height: auto;
+    position: relative;
+}
+
+
+.text-area p {
+    font-size: 25px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.videobear {
+    background-color: rgb(232, 226, 213)
+}
+
+.videobear h1 {
+    color: rgb (11, 33, 3);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 80px;
+    font-size: 40px;
+
+
+
+}
+
+.videobear iframe {
+    padding-left: 300px;
+    border: None;
+    padding-bottom: 40px;
+
+}
+
+
+
+.allproducts {
+    
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+
+.smallerrcontainer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+    gap: 35px;
+
+}
+
+
+.smallerrcontainer2 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+    gap: 35px;
+  
+
+}
+/* Table Styling with Borders */
+table {
+    width: 90%;
+    border-collapse: collapse; /* Ensures single borders between cells */
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  thead th {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-bottom: 2px solid #ddd; /* Border around header cells */
+  }
+  
+  tbody td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Border around data cells */
+  }
+  
+  tbody tr {
+    background-color: #fcfcfc; /* Alternating row colors */
+  }
+  
+  tbody tr:hover {
+    background-color: #f2f2f2; /* Highlight row on hover */
+  }
+  
+  .orderhis {
+    margin-left: 90px;
+    margin-top: 27px;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; /* Space between fields */
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 90px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: left;
+  }
+  label {
+    display: block;
+    margin-right: 15px;
+    font-weight: bold;
+
+  }
+  form input {
+    width: 100%; /* Inputs take full width of grid cells */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  form button {
+    width: 200px; /* Button spans both columns */
+    padding: 10px;
+    background-color: #1f513a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+
+.fruittproducts {
+    margin: 0;
+}
+  
+.fruittproducts img {
+    width: 200px;
+    height: 292px;
+    object-fit: cover;
+    display: block;
+
+}
+
+.fruittproducts2 img {
+    width: 200px;
+    height: 292px;
+    object-fit: cover;
+    display: block;
+
+}
+
+.fruitnamee {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.fruitpricee {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fruitpricedepth {
+    font-size: 12px;
+    text-align: center;
+}
+
+.homeenter .fruitpricedepth {
+    margin-bottom: 20px;
+}
+
+.homeenter .fruitnamee {
+    margin-top: 5px;
+}
+
+
+
+.smallercontainer {
+    /* sets the max width of an element */
+
+    max-width: 1200px;
+    margin: 10px;
+    padding: 24px 0;
+    display: flex;
+}
+
+
+.fruittproducts2 .fruitpricee {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.fruittproducts2 .fruitpriceddepth {
+
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.Fruityname {
+    font-size: 22px;
+    text-align: center;
+    
+}
+.fruddesc {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.frudescdepth {
+    text-align: center;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+
+
+
+.card-link:hover .card-button {
+    color: #fff;
+    background: #1f513a;
+  
+
+}
+
+.card-link {
+    width: 300px;
+    display: block;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background: white;
+    box-shadow: 0 10px 10px rgb(0,0,0,0.05);
+    transition: 0.2s ease;
+
+}
+
+.card-link:hover {
+    border-color:#1f513a;
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 9/10;
+    object-fit: cover;
+
+}
+
+.card-item {
+    list-style: none;
+
+}
+
+
+.backgroundimage {
+    background-image: url(Untitled\ design\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 90%;
+    padding-bottom: 100px;
+    background-position: center;
+    margin-left: 67px;
+}
+
+.clouds h1 {
+    text-align: left;
+    margin-left: -300px;
+    font-family: 'Poppins', sans-serif; /* Or 'Quicksand', or 'Lora' */
+    font-weight: 600;
+    color: #1f513a; /* Matches your theme */
+    }
+
